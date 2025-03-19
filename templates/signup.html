@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        <p> {{ form.first_name.label }} {{ form.first_name() }} </p>
+        <p> {{ form.last_name.label }} {{ form.last_name() }} </p>
+        <p> {{ form.email.label }} {{ form.email() }} </p>
+        <p> {{ form.pid.label }} {{ form.pid() }} </p>
+        <p> {{ form.campus.label }} {{ form.campus() }} </p>
+        <p> {{ form.major.label }} {{ form.major() }} </p>
+        <p> {{ form.submit() }} </p>
+    </form>
+</body>
+</html>
