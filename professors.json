@@ -1,0 +1,16 @@
+{
+  "first_name": "Gregory",
+  "last_name": "Reis",
+  "profession": "Instructor",
+  "specialty": ["Robotics","Artificial Intelligence"],
+  "university": "Florida International University",
+  "courses": [
+    {
+      "code": "COP4814",
+      "title": "Component-Based Software Development"
+    },
+    {
+      "code": "COP4555",
+      "title": "Principles of Programming Languages"
+    }]
+}

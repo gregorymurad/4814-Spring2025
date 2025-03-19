@@ -1,0 +1,45 @@
+{
+  "squadName": "Super Component Heroes",
+  "hometown" : "Pyami",
+  "formed" : 2019,
+  "secretBase" : "PC432",
+  "active" : true,
+  "members" : [
+    {
+      "name" : "Interface Man",
+      "age" : 29,
+      "secretIdentity" : "Don Wilson",
+      "strength" : 150,
+      "powers" : [
+        "Minimalism",
+        "Turning tiny",
+        "Radiation blast",
+        "Color explosion"
+      ]
+    },
+    {
+      "name" : "API Flame",
+      "age" : 39,
+      "secretIdentity" : "Jane McDonald",
+      "strength" : 100,
+      "powers" : [
+        "Million tonne punch",
+        "Damage resistance",
+        "Superhuman reflexes",
+        "Long distance hearing"
+      ]
+    },
+    {
+      "name" : "Objectman",
+      "age" : 1000,
+      "secretIdentity" : "Unknown",
+      "strength" : 85,
+      "powers" : [
+        "Immortality",
+        "Overwrite Immunity",
+        "Teleportation",
+        "Polumorphism travel"
+      ]
+    }
+  ]
+}

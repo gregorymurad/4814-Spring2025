@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Courses</title>
+</head>
+<body>
+    <p>Courses that I am currently teaching:</p>
+    {% for i in mc %}
+        {% if i[3] == '4' %}
+            <p>{{ i }} - Senior level course</p>
+        {% elif i[3] == '3' %}
+            <p>{{ i }} - Junior level course</p>
+        {% elif i[3] == '7' %}
+            <p>{{ i }} - PhD level course</p>
+        {% elif i[3] == '2' %}
+            <p>{{ i }} - Beginner/Sophomore level course</p>
+        {% else %}
+            <p>{{ i }}</p>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>

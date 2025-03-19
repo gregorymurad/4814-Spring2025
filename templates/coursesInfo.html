@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Courses Info</title>
+</head>
+<body>
+    <h2>Courses Info Table</h2>
+    <table>
+        <tr>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>Number of Students</th>
+        </tr>
+        {% for i,j in coursesInformation.items() %}
+        <tr>
+            <td>{{ i }}</td>
+            <td>{{ j[0] }}</td>
+            <td>{{ j[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+<!--
+     To create a for block in html, we use {% for i in something %} {% endfor %}
+     To access a variable, we use {{ var }}
+ -->
+</body>
+</html>
