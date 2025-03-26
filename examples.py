@@ -49,12 +49,12 @@ print(eloraD)
 print(elrondD)
 
 # L) Serializing both Elrond and Elora dictionaries to JSON
-main_functions.save_to_file(eloraD,"elora.json")
-main_functions.save_to_file(elrondD,"elrond.json")
+main_functions.save_to_file(eloraD,"jsonFiles/elora.json")
+main_functions.save_to_file(elrondD,"jsonFiles/elrond.json")
 
 # M) Deserializing both Elrond and Elora JSON files to Python dictionary
-x = main_functions.read_from_file("elora.json")
-y = main_functions.read_from_file("elrond.json")
+x = main_functions.read_from_file("jsonFiles/elora.json")
+y = main_functions.read_from_file("jsonFiles/elrond.json")
 
 # N) Printing their types
 print(type(x),type(y))

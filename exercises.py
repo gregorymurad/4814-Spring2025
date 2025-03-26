@@ -3,7 +3,7 @@ import main_functions
 #Exercise 1: Using the function 'read_from_file',
 # read superCompHeroes.json as a dictionary in Python,
 # and print its type to confirm:
-heroes=main_functions.read_from_file("superCompHeroes.json")
+heroes=main_functions.read_from_file("jsonFiles/superCompHeroes.json")
 print(type(heroes))
 #Exercise 2: Print the number of keys in superCompHeroes
 print(len(heroes.keys()))

@@ -31,7 +31,22 @@ def index():
     # create the form
     form = SignUp(request.form)
     if request.method == "POST":
-        pass
+        response_dict = {
+            "firstName":request.form["first_name"],
+            "lastName":request.form["last_name"],
+            "email":request.form["email"],
+            "pantherid":request.form["pid"],
+            "campus":request.form["campus"],
+            "major":request.form["major"]
+        }
+        # Other ways to save user's input:
+        # - save to variables
+        # - put in a list
+        # - save it to a csv file
+        # - save it to a json file
+        # - send it to a database (safest!)
+        return render_template("success.html",
+                               name=response_dict["firstName"])
     else:
         return render_template("signup.html",form=form)
 

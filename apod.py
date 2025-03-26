@@ -11,13 +11,13 @@ nasaKey = nasaAPIsDict["apiKey"]
 final_url = url + nasaKey
 
 #Make the API request
-# response = requests.get(final_url).json()
+response = requests.get(final_url).json()
 
 #Serialize the result to a JSON document
-# main_functions.save_to_file(response,"apod.json")
+main_functions.save_to_file(response,"jsonFiles/apod.json")
 
 #Deserialize the recently create JSON document
-apod = main_functions.read_from_file("apod.json")
+apod = main_functions.read_from_file("jsonFiles/apod.json")
 
 #What is the type of the object deserialized?
 print(type(apod))
@@ -28,4 +28,4 @@ print(apod.keys())
 #Access some of their values passing their keys
 print("Title:",apod["title"])
 print("Explanation:",apod["explanation"])
-print("URL:",apod["url"])
+print("URL:",apod["hdurl"])

@@ -4,13 +4,13 @@ import requests, main_functions
 url = "http://api.open-notify.org/astros.json"
 
 #Make the API request
-# response = requests.get(url).json()
+response = requests.get(url).json()
 
 #Serialize the result to a JSON document
-# main_functions.save_to_file(response,"astronauts.json")
+main_functions.save_to_file(response,"jsonFiles/astronauts.json")
 
 #Deserialize the recently create JSON document
-astronautsDict = main_functions.read_from_file("astronauts.json")
+astronautsDict = main_functions.read_from_file("jsonFiles/astronauts.json")
 
 #What is the type of the object deserialized?
 print(type(astronautsDict))

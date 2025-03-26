@@ -10,13 +10,13 @@ my_key=main_functions.read_from_file("apiKeys/nasa_apis.json")["apiKey"]
 final_url = url + my_key
 
 #Make the API request
-# response=requests.get(final_url).json() # This is the main part!
+response=requests.get(final_url).json() # This is the main part!
 
 #Serialize the result to a JSON document
-# main_functions.save_to_file(response,"mars_photos.json")
+main_functions.save_to_file(response,"jsonFiles/mars_photos.json")
 
 #Deserialize the recently create JSON document
-mars_pics=main_functions.read_from_file("mars_photos.json")
+mars_pics=main_functions.read_from_file("jsonFiles/mars_photos.json")
 
 #What is the type of the object deserialized?
 print(type(mars_pics))
