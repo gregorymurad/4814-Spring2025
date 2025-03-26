@@ -5,6 +5,7 @@ import main_functions
 # and print its type to confirm:
 heroes=main_functions.read_from_file("jsonFiles/superCompHeroes.json")
 print(type(heroes))
+
 #Exercise 2: Print the number of keys in superCompHeroes
 print(len(heroes.keys()))
 
