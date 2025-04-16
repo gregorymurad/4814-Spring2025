@@ -32,13 +32,15 @@ def get_list_NASA_pictures(camera_name,sol,api_key):
 
 class Mars_camera(FlaskForm):
     camera = SelectField("Choose a camera",[validators.DataRequired()],
-                         choices=[("FHAZ","Front Hazard Avoidance Camera"),
-                                                    ("RHAZ","Rear Hazard Avoidance Camera"),
-                                                    ("MAST","Mast Camera"),
-                                                    ("CHEMCAM","Chemistry and Camera Complex"),
-                                                    ("MAHLI","Mars Hand Lens Imager"),
-                                                    ("MARDI","Mars Descent Imager"),
-                                                    ("NAVCAM","Navigation Camera")])
+                         choices=[
+                                    ("FHAZ","Front Hazard Avoidance Camera"),
+                                    ("RHAZ","Rear Hazard Avoidance Camera"),
+                                    ("MAST","Mast Camera"),
+                                    ("CHEMCAM","Chemistry and Camera Complex"),
+                                    ("MAHLI","Mars Hand Lens Imager"),
+                                    ("MARDI","Mars Descent Imager"),
+                                    ("NAVCAM","Navigation Camera")
+                         ])
     sol = IntegerField("Sol",validators=[NumberRange(min=1, max=1000, message='Invalid length')]) # Sol is Martian rotation or day
     submit = SubmitField('Submit')
 
@@ -54,4 +56,4 @@ def index():
         return render_template('mars.html', form=form)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search News</title>
+</head>
+<body>
+ <form method="POST" action="{{ url_for('index') }}">
+        <h1>Search Only Topics You Want</h1>
+        {{ form.csrf_token }}
+        <p>{{ form.category.label }}</p>
+        {{ form.category() }}
+
+        <p>{{ form.keyword.label }}</p>
+        {{ form.keyword() }}
+
+        {{ form.submit() }}
+    </form>
+</body>
+</html>
